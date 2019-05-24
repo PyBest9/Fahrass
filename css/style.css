@@ -1,0 +1,113 @@
+table {
+  font-family: 'Cairo', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td, th {
+   
+
+  padding: 8px;
+  text-align: right;
+
+}
+
+
+td {
+ font-family: 'Cairo', sans-serif;
+ border-radius: 8px;
+ padding-top: 20px;
+ border-bottom: 7px solid #ddd
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.12);
+ 
+}
+
+span {
+ color:#44AF8C;
+ font-weight: 600;
+ 
+}
+#bckbtnpanel{
+ background-color:#373737;
+}
+
+.ui-content {
+background-color:#fff; 
+}
+
+
+#uibtn{
+  background-color:#fff;
+  color: #44AF8C;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 900;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+#frtr {
+  text-align: left;
+  font-family: 'Cairo';
+
+  text-transform: lowercase;
+  font-size: 18px;
+}
+h1 , h4{
+  font-family: 'Cairo';
+}
+
+#myInput {
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+}
+
+#classpan{
+	background-color:#44af8c;
+	color: #fff;
+	line-height:2;
+	padding-right:10px;
+	padding-left :10px;
+  width: auto;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 14px;
+
+}
+#mypanel{
+  width: 300px;
+  
+}
+#closbtn{
+  background-color: transparent;
+  border: none;
+}
+
+
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cairo'), local('Cairo-Regular'), url(../css/Cairo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cairo'), local('Cairo-Regular'), url(../css/Cairo.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cairo'), local('Cairo-Regular'), url(../css/Cairo.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}

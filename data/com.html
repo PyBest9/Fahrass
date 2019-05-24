@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="scripts/jquery.js"></script>
+<script type="text/javascript">
+		$(document).on('mobileinit' , function(){
+			$.mobile.defaultPageTransition = 'slidefade' 
+		});
+	</script>
+	<script src="scripts/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" src="scripts/com.js"></script>
+</head>
+<body>
+<div data-role="page" id="com">
+
+	<div data-role="header">
+		<a href="menu.html" rel="external" > <img src="img/arrow.svg" width="10" height="10"></a>
+		<h1>مراجع اعلام واتصال</h1>
+	</div>
+	<!-- /header -->
+
+	<div role="main" class="ui-content">
+		<input style= " text-align: right;" type="search" name="search-1" id="search-1" value="" placeholder="بحث">
+	</div>
+	<!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

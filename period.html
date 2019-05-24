@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>مجلات ودوريات</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.css">
+  <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.js"></script>
+		<script type="text/javascript" src="scripts/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="scripts/filter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+ 
+
+<body onload="filt()">
+  <div data-role="header">
+    <a href="index.html" rel="external"> <img src="img/arrow.svg" width="10" height="10"></a>
+    <h1>مجلات ودوريات</h1>
+  </div>
+
+  <div id="main" role="main" class="ui-content" style="background-color: #EDEDED;">
+    <div id="inputdiv" >
+	 <input id="myInput" type="search"  placeholder="بحث"  onfocus="this.placeholder=''" onblur="this.placeholder='بحث'">
+</div>
+</div>
+<div role="main" class="ui-content" style="background-color: #fff;">
+<div>
+<table id="myTable">
+  <tbody >
+<tr><td><span id="classpan">التصنيف :د/00001</span><br/>
+<span> العنوان </span>الصحافة الالكترونية<br/>
+<span> المـؤلف </span>جامعة الدول العربية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00002</span><br/>
+<span> العنوان </span>استراتيجيات التميز في المنظمات <br/>
+<span> المـؤلف </span>جامعة الدول العربية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00003</span><br/>
+<span> العنوان </span>التعليم والبحث العلمي في مشروع النهضة العربية<br/>
+<span> المـؤلف </span>ضياء الدين زاهر 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00004</span><br/>
+<span> العنوان </span>الإعلام الأمني العربي : قضاياه و مشكلاته<br/>
+<span> المـؤلف </span>الغامدي عبد العزيز بن صقر 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00005</span><br/>
+<span> العنوان </span>فلسفات معاصرة : العدد 2-3<br/>
+<span> المـؤلف </span>نجيب الدين عدنان
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00006</span><br/>
+<span> العنوان </span>الحكمة للدراسات الاعلامية و الاتصالية <br/>
+<span> المـؤلف </span>حمدي محمد عبد الفتاح 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00007</span><br/>
+<span> العنوان </span>الحكمة للدراسات الاجتماعية : مجلة دورية <br/>
+<span> المـؤلف </span>سعيد عيادي 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00008</span><br/>
+<span> العنوان </span>الحكمة : مجلة دورية<br/>
+<span> المـؤلف </span>عبد القادر تومي
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00009</span><br/>
+<span> العنوان </span>الحكمة : مجلة دورية <br/>
+<span> المـؤلف </span>كمال عبد الله
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00010</span><br/>
+<span> العنوان </span>مجلة الحكمة للدراسات التاريخية : مجلة دورية اكاديمية محكمة<br/>
+<span> المـؤلف </span>بلقاسم رحماني 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00011</span><br/>
+<span> العنوان </span>اسس المنهج في علم النفس<br/>
+<span> المـؤلف </span>موسى عبد الرحمن وبن خليفة محمود
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00012</span><br/>
+<span> العنوان </span>الاصالة <br/>
+<span> المـؤلف </span>
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00013</span><br/>
+<span> العنوان </span>اشكالية الفتوى بين الضوابط الشرعية : ج 1-2-3<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00014</span><br/>
+<span> العنوان </span>تلمسان الاسلامية بين التراث العمراني : ج 1-2<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00015</span><br/>
+<span> العنوان </span>مالك بن بني واستشراق المستقبل : ج 1-2<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00016</span><br/>
+<span> العنوان </span>الامام محمد بن عبد الكريم المغيلي<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00017</span><br/>
+<span> العنوان </span>الشيخ عبد القادر المجاوي<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00018</span><br/>
+<span> العنوان </span>الفتوى والوطنية في فكر الشيخ احمد حماني <br/>
+<span> المـؤلف </span>
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00019</span><br/>
+<span> العنوان </span>الشعائر الدينية حرية ممارستها<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00020</span><br/>
+<span> العنوان </span>الفقه المالكي في بلاد توات : اجتهاد و تدريسا<br/>
+<span> المـؤلف </span>وزارة الشؤون الدينية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00021</span><br/>
+<span> العنوان </span>القيم الروحية في الثقافة الامازيغية <br/>
+<span> المـؤلف </span>
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00022</span><br/>
+<span> العنوان </span>دور علماء الساورة في خدمة الثقافة الجزائرية <br/>
+<span> المـؤلف </span>
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00023</span><br/>
+<span> العنوان </span>الثقافة الاسلامية <br/>
+<span> المـؤلف </span>عبد الحميد حاجيات 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00024</span><br/>
+<span> العنوان </span>المواقف مجلة الدراسات و البحوث في المجتمع و التاريح<br/>
+<span> المـؤلف </span>غماري طيبي
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00025</span><br/>
+<span> العنوان </span>مداخلات الملتقى الوطني الاول حول اشكالية القياس في علم النفس <br/>
+<span> المـؤلف </span>كلية العلوم الانسانية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00026</span><br/>
+<span> العنوان </span>دراسات اجتماعية وتربوية : المسالة التربوية في الجزائر في ظل التحديات الراهنة <br/>
+<span> المـؤلف </span>كلية الاداب والعلوم ا
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00027</span><br/>
+<span> العنوان </span>العلاقات الجزائرية التركية : في ميزان التاريخ و السياسة ج 1-2<br/>
+<span> المـؤلف </span>ميسوم بلقاسم 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00028</span><br/>
+<span> العنوان </span>مجلة الدراسات الاسلامية<br/>
+<span> المـؤلف </span>قسم العلوم الاسلامية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00029</span><br/>
+<span> العنوان </span>الاكاديمية للدراسات الاجتماعية والانسانية : العلوم الاجتماعية <br/>
+<span> المـؤلف </span>تركي احمد
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00030</span><br/>
+<span> العنوان </span>مجلة علوم الانسان والمجتمع <br/>
+<span> المـؤلف </span>كلية العلوم الانسانية والاجتماعية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00031</span><br/>
+<span> العنوان </span>مجلة العلوم الانسانية : ع1-2-5-8-9-10-11-12-13<br/>
+<span> المـؤلف </span>الطيب داودي
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00032</span><br/>
+<span> العنوان </span>مجلة العلوم الانسانية : ع.6.5<br/>
+<span> المـؤلف </span>رايس حدة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00033</span><br/>
+<span> العنوان </span>مجلة علوم الانسان والمجتمع <br/>
+<span> المـؤلف </span>عبد الرحمان برقوق 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00034</span><br/>
+<span> العنوان </span>المجلة الخلدونية : العلامة محمد الخضر حسين الطولقي الجزائري <br/>
+<span> المـؤلف </span>فوزي مصمودي
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00035</span><br/>
+<span> العنوان </span>حولية المؤرخ<br/>
+<span> المـؤلف </span>بوعلام بلقاسمي 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00036</span><br/>
+<span> العنوان </span>حولية المؤرخ <br/>
+<span> المـؤلف </span>تلمساني بن يوسف
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00037</span><br/>
+<span> العنوان </span>دفاتر مخبر <br/>
+<span> المـؤلف </span>مخبر المسالة التربوية 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00038</span><br/>
+<span> العنوان </span>دراسات في العلوم الانسانية والاجتماعية : دور الاثار في ترقية السياحة الثقافية <br/>
+<span> المـؤلف </span>محمود بوسنة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00039</span><br/>
+<span> العنوان </span>سيرتنا : مجلة تاريخية اجتماعية فلسفية <br/>
+<span> المـؤلف </span>عبد العزيز بن الاحرش
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00040</span><br/>
+<span> العنوان </span>مجلة معارف بسيكولوجية<br/>
+<span> المـؤلف </span>بوستة محمود
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00041</span><br/>
+<span> العنوان </span>مجلة العلوم الانسانية <br/>
+<span> المـؤلف </span>الهاشمي لوكيا
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00042</span><br/>
+<span> العنوان </span>مجلة العلوم الاجتماعية والانسانية <br/>
+<span> المـؤلف </span>الخير قشي 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00043</span><br/>
+<span> العنوان </span>مجلة العلوم الانسانية <br/>
+<span> المـؤلف </span>الهاشمي لوكيا
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00044</span><br/>
+<span> العنوان </span>مجلة العلوم الاجتماعية والانسانية <br/>
+<span> المـؤلف </span>محمد خزار 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00045</span><br/>
+<span> العنوان </span>ابحاث اقتصادية وادارية <br/>
+<span> المـؤلف </span> عبد الناصر موسي 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00046</span><br/>
+<span> العنوان </span>ابحاث اقتصادية وادارية <br/>
+<span> المـؤلف </span>حدة رايس 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00047</span><br/>
+<span> العنوان </span>دليل المستهلك الجزائري<br/>
+<span> المـؤلف </span>وزارة التجارة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00048</span><br/>
+<span> العنوان </span><br/>ACTES DE LA RECHERCHE EN SCIENCES SOCIALES : N°199<br/>
+<span> المـؤلف </span><br/>PIERRE BOURDIEU
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00049</span><br/>
+<span> العنوان </span><br/>CULTURES SOCIETES : N° 25-26-27-28<br/>
+<span> المـؤلف </span><br/>BRUNO ALLAIN
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00050</span><br/>
+<span> العنوان </span><br/>RECHERCHE SOCIALE : 205-N° 206<br/>
+<span> المـؤلف </span><br/>ALAIN VULBEAU 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00051</span><br/>
+<span> العنوان </span>وسائل الاعلام والمجتمع<br/>
+<span> المـؤلف </span>كلية العلوم الانسانية والاجتماعية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00052</span><br/>
+<span> العنوان </span><br/>HOMME ET MIGRATIONS : N°1303-1304<br/>
+<span> المـؤلف </span><br/>LUC GRUSON
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00053</span><br/>
+<span> العنوان </span><br/>REVUE FRANCAISE DE SOCIOLOGIE : VOL 54N°1-2-3-4<br/>
+<span> المـؤلف </span><br/>OLIVER GALLAND
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00054</span><br/>
+<span> العنوان </span><br/>LE MOUVEMENT SOCIAL <br/>
+<span> المـؤلف </span><br/>JEAN-FRANCOIS
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00055</span><br/>
+<span> العنوان </span><br/>LE TRAVAIL HUMAIN : VOL 76 N°1-2-3-4<br/>
+<span> المـؤلف </span><br/>FRANCOISE DARSES 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00058</span><br/>
+<span> العنوان </span><br/>SOCIETES CONTEMPORAINES : N°89-90-91-92<br/>
+<span> المـؤلف </span><br/>SABINE MONTAGNE
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00059</span><br/>
+<span> العنوان </span><br/>SOCIOLOGIE : VOL 4 N°1-2-3-4<br/>
+<span> المـؤلف </span><br/>SERGE PAUGAM
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00060</span><br/>
+<span> العنوان </span><br/>SOCIOLOGIE DU TRAVAIL : VOL 55 N° 1-2-3-4<br/>
+<span> المـؤلف </span><br/>DANIEL RODRIGUER 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00061</span><br/>
+<span> العنوان </span><br/>GRANDS REPORTAGES : N°377-378-379-380-381-382-383-384-385-386-388-389<br/>
+<span> المـؤلف </span><br/>PIERRE BIGORNE
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00062</span><br/>
+<span> العنوان </span><br/>CULTURE MEDIAS : N° 43-44-45<br/>
+<span> المـؤلف </span><br/>NICOLAS MARC
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00063</span><br/>
+<span> العنوان </span><br/>ARCHVES DE SCIENCES SOCIALES DES RELIGIONS : N°161-162-163<br/>
+<span> المـؤلف </span><br/>PIERRE ANTOINE
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00064</span><br/>
+<span> العنوان </span><br/>REVUE DES SCIENCES HUMAINES : N° 309-310-311<br/>
+<span> المـؤلف </span><br/>VALERIE LOICHOT
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00065</span><br/>
+<span> العنوان </span><br/>L'ANNEE PSYCHOLOGIQUE : VOL 113 N°1-2-3-4<br/>
+<span> المـؤلف </span><br/>LUDOVIC FERRAND
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00066</span><br/>
+<span> العنوان </span><br/>PRATIQUES PSYCHOLOGIQUES : N° 1-2-3-4 VOL 19<br/>
+<span> المـؤلف </span><br/>DANA CASTRO
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00067</span><br/>
+<span> العنوان </span><br/>Psychologie et education : réinventons encore 1-2-3-4<br/>
+<span> المـؤلف </span><br/>catherine metifeu
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00068</span><br/>
+<span> العنوان </span><br/>EUROPEAN REVIEW OF APPLIED PSYCHOLOGY : VOL 63 N°1-2-3-4-5<br/>
+<span> المـؤلف </span><br/>JACQUES PY
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00069</span><br/>
+<span> العنوان </span><br/>REVUE FRANCAISE DE PSYCHANALYSE : LE PATERNEL 1-2-3-4-5<br/>
+<span> المـؤلف </span><br/>FRANCOISE GOBLENCE
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00070</span><br/>
+<span> العنوان </span><br/>REVUE INTERNATIONALE DE PSYCHOLOGIE SOCIALE : TRIMESTRILLE -TOME 26 N°1-2-3-4<br/>
+<span> المـؤلف </span><br/>GABRIEL MUGNY
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00071</span><br/>
+<span> العنوان </span><br/>THERAPIE PSYCHOMOTRICE ET RECHERCHES : N° 173-174<br/>
+<span> المـؤلف </span><br/>JEROME BOUTINAUD
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00072</span><br/>
+<span> العنوان </span><br/>ALTERNATIVES INTERNATIONALES : N°13-14-58-59-61-62-<br/>
+<span> المـؤلف </span><br/>THIERRY PECH
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00073</span><br/>
+<span> العنوان </span><br/>LES ETUDES PHILOSOPHIQUES : N°2-3-4<br/>
+<span> المـؤلف </span><br/>DAVID LEFEBVRE 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00074</span><br/>
+<span> العنوان </span><br/>REVUE PHILOSOPHIQUE : N°1-2-3-4<br/>
+<span> المـؤلف </span><br/>YVON BRES 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00075</span><br/>
+<span> العنوان </span><br/>PHILOSOPHIE ANTIQUE : N°1-2-3-4-5-6-7-8-9-10-11-12 <br/>
+<span> المـؤلف </span><br/>ANDRE LAKS 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00076</span><br/>
+<span> العنوان </span><br/>REVUE DE BIBLIOLOGIE : N°71-72-73-74-75-76-77-78-79<br/>
+<span> المـؤلف </span><br/>ROBERT ESTIVALS
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00077</span><br/>
+<span> العنوان </span><br/>CRITIQUE : N°775-776-777-778-779-780-781-782-783-784-785-787<br/>
+<span> المـؤلف </span><br/>JOHN DEWEY
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00078</span><br/>
+<span> العنوان </span>الاتجاهات الحديثة في المكتبات والمعلومات : العدد 39_ 40 _ 41<br/>
+<span> المـؤلف </span>أسامة السيد محمود
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00079</span><br/>
+<span> العنوان </span>المجلة الاوروبية لتكنولوجيا علوم الرياضة <br/>
+<span> المـؤلف </span>محمد صبحي حسانين 
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00080</span><br/>
+<span> العنوان </span>ثقافة الخوف (1) و (2) : مؤتمر فيلاديلفيا الدولي الحادي عشر <br/>
+<span> المـؤلف </span>صالح ابو اصبع
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00081</span><br/>
+<span> العنوان </span>الطفولة في الجزائر نظرة استشرافية : أعمال ملتقى الطفولة لقسم علم النفس<br/>
+<span> المـؤلف </span>المسألة التربوية في الجزائر في ظل التحديات الراهنة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00082</span><br/>
+<span> العنوان </span>فكر ومجتمع : دراسات وأبحاث<br/>
+<span> المـؤلف </span>رضوان بوجمعة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00083</span><br/>
+<span> العنوان </span>العولمة والنظام التربوي في الجزائر وباقي الدول العربية : الملتقى الدولي الثاني المنظم بالتعاون مع قسمي علم النفس وعلم الاجتماع<br/>
+<span> المـؤلف </span>مخبر المسألة التربوية في الجزائر في ظل التحديات الراهنة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00084</span><br/>
+<span> العنوان </span>ملامح التغيير الاجتماعي في المجتمع الجزائري<br/>
+<span> المـؤلف </span>بلقاسم سلاطنية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00085</span><br/>
+<span> العنوان </span>ضمان جودة التعليم العالي : المبررات والمتطلبات<br/>
+<span> المـؤلف </span>جابر نصر الدين
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00086</span><br/>
+<span> العنوان </span>الرهانات الاساسية لتفعيل الاصلاح التربوي في الجزائر : اعمال الملتقى الثالثالمنعقد 6-7/ماي 2009<br/>
+<span> المـؤلف </span>المسألة التربوية في الجزائر في ظل التحديات الراهنة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00087</span><br/>
+<span> العنوان </span>الجامعة الجزائرية والتحديات الراهنة<br/>
+<span> المـؤلف </span>المسألة التربوية في الجزائر في ظل التحديات الراهنة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00088</span><br/>
+<span> العنوان </span>نظرة المجتمع لرياضة ذوي الاحتياجات الخاصة في الجزائر : أعمال الملتقى الوطني الثالث لقسم التربية البدينة والرياضية<br/>
+<span> المـؤلف </span>المسألة التربوية في الجزائر في ظل التحديات الراهنة
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00089</span><br/>
+<span> العنوان </span>وسائل الاعلام والمجتمع : المؤتمر العلمي الاول<br/>
+<span> المـؤلف </span>قسم العلوم الانسانية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00090</span><br/>
+<span> العنوان </span>التحديات المعاصرة العولمة-الانترنت-اللغة.. : فعاليات اليوم الدراسي الوطني الاول<br/>
+<span> المـؤلف </span>مخبر علم اجتماع الاتصال
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00091</span><br/>
+<span> العنوان </span>الاتجاهات المعاصرةفي ادارة التراث الثقافي : بحوث و او راق عمل ندوة -مراكش-اغسطس 2008<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00092</span><br/>
+<span> العنوان </span>منظمة التجارة العالمية في ضوء مفاوضات جولة الدوحة (الانضمام-الاجراءات-المفاوضات ) : المؤتمر العربي 3 المنعقد في -دمشق- مارس2008<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00093</span><br/>
+<span> العنوان </span>الجامعات العربية تحديات العصر والآفاق المستقبلية<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00094</span><br/>
+<span> العنوان </span>انسانيات المجلة الجزائرية في الانثروبولوجية و العلوم الاجتماعية : عدد مزدوج 32-33 افريل-سبتمبر 2006 مج 10<br/>
+<span> المـؤلف </span>بنغبريط نورية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00095</span><br/>
+<span> العنوان </span>الاتصال في المؤسسة : فعاليات الملتقى الوطني 2<br/>
+<span> المـؤلف </span>مخبر علم اجتماع الاتصال
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00096</span><br/>
+<span> العنوان </span>التعليم و مستقبل المجتمع المدني في مصر<br/>
+<span> المـؤلف </span>مركز الجزويت الثقافي
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00097</span><br/>
+<span> العنوان </span>دور المرأة العربية في التنمية المستدامة<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00098</span><br/>
+<span> العنوان </span>أثر الفضائيات على الاسرة العربية<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00099</span><br/>
+<span> العنوان </span>المناهج التربوية وقضايا العصر<br/>
+<span> المـؤلف </span>ابراهيم القاعود
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00100</span><br/>
+<span> العنوان </span>الفضائيات العربية و متغيرات العصر : اعمال المؤتمر الاول للاكاديمية الدولية لعلوم الاعلام<br/>
+<span> المـؤلف </span>الحديدي منى سعيد
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00101</span><br/>
+<span> العنوان </span>معوقات استخدام البحث العلمي في مجال الجريمة : اعمال الندوة العلمية<br/>
+<span> المـؤلف </span>مركز الدراسات والبحوث
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00102</span><br/>
+<span> العنوان </span>دور المراة العربية في التنمية المستدامة ومؤسسات المجتمع المدني : ملتقى الدوحة (2-6 مارس 2008)<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00103</span><br/>
+<span> العنوان </span>احتياجات ومشكلات الشباب في ضوء المتغيرات العالمية : منتدى( يناير 2004)<br/>
+<span> المـؤلف </span>الامانة العامة للمنتدى
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00104</span><br/>
+<span> العنوان </span>دراسات في العلوم الانسانية و الاجتماعية : مجلة علمية محكمة نصف سنوية العدد 6<br/>
+<span> المـؤلف </span>لعرج عبد العزيز
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00105</span><br/>
+<span> العنوان </span>دراسات في العلوم الانسانية و الاجتماعية : مجلة علمية نصف سنوية العدد 9 <br/>
+<span> المـؤلف </span>بلعربي الطيب
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00106</span><br/>
+<span> العنوان </span>ملتقى موازنة البرامج و الاراء و اليات تطبيقها في الجامعات العربية : بحوث و اوراق عمل( دمشق 25-27 يوليو 2004)<br/>
+<span> المـؤلف </span>المنظمة العربية للتنمية الادارية
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00107</span><br/>
+<span> العنوان </span>مدلولات السكان و التنمية للبنك الدولي : ملحص<br/>
+<span> المـؤلف </span>البنك الدولي للانشاء و التعمير
+<br/></td></tr><tr><td><span id="classpan">التصنيف :د/00109</span><br/>
+<span> العنوان </span>المصادر : مجلة سداسية محكمة العدد14 (س.2 2006) العدد 19 (س.1 2009) العدد 9 (س.1 2004)<br/>
+<span> المـؤلف </span>شقرون احمد
+<br/></td></tr>
+  </tbody>
+</table>
+
+  </div>
+  
+
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
